@@ -1,4 +1,4 @@
-package user_v1
+package user
 
 import (
 	desc "auth/pkg/user_v1"

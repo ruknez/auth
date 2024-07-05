@@ -1,4 +1,4 @@
-package user_v1
+package user
 
 import (
 	"context"
@@ -10,8 +10,7 @@ import (
 
 // Create ручка создания нового пользователя в системе.
 func (s *UserV1GrpcService) Create(_ context.Context, req *desc.CreateRequest) (*desc.CreateResponse, error) {
-	_ = req
-
 	slog.Info("Create method", "req", fmt.Sprintf("%+v", req))
+
 	return nil, nil
 }

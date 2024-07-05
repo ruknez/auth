@@ -1,4 +1,4 @@
-package user_v1
+package user
 
 import (
 	"context"
@@ -12,8 +12,7 @@ import (
 
 // Update ручка обновления информации о пользователе по его идентификатору.
 func (s *UserV1GrpcService) Update(_ context.Context, req *desc.UpdateRequest) (*emptypb.Empty, error) {
-	_ = req
-
 	slog.Info("Update method", "req", fmt.Sprintf("%+v", req))
+
 	return nil, nil
 }
