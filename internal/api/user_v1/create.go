@@ -1,15 +1,15 @@
-package grpc
+package user_v1
 
 import (
 	"context"
 	"fmt"
 	"log/slog"
 
-	desc "auth/pkg/note_v1"
+	desc "auth/pkg/user_v1"
 )
 
 // Create ручка создания нового пользователя в системе.
-func (s *NoteV1GrpcService) Create(_ context.Context, req *desc.CreateRequest) (*desc.CreateResponse, error) {
+func (s *UserV1GrpcService) Create(_ context.Context, req *desc.CreateRequest) (*desc.CreateResponse, error) {
 	_ = req
 
 	slog.Info("Create method", "req", fmt.Sprintf("%+v", req))
