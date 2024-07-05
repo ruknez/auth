@@ -4,11 +4,12 @@ import (
 	desc "auth/pkg/note_v1"
 )
 
-type serviceGrpc struct {
+// NoteV1GrpcService реализация ручке grpc.
+type NoteV1GrpcService struct {
 	desc.UnimplementedNoteV1Server
 }
 
-// NewServiceGrpc возвращает сервис реализующий хэндлеры.
-func NewServiceGrpc() *serviceGrpc {
-	return &serviceGrpc{}
+// NewNoteV1GrpcService возвращает сервис реализующий хэндлеры.
+func NewNoteV1GrpcService() *NoteV1GrpcService {
+	return &NoteV1GrpcService{}
 }

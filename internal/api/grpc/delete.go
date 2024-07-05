@@ -2,6 +2,8 @@ package grpc
 
 import (
 	"context"
+	"fmt"
+	"log/slog"
 
 	desc "auth/pkg/note_v1"
 
@@ -9,8 +11,9 @@ import (
 )
 
 // Delete удаление пользователя из системы по его идентификатору.
-func (s *serviceGrpc) Delete(_ context.Context, req *desc.DeleteRequest) (*emptypb.Empty, error) {
+func (s *NoteV1GrpcService) Delete(_ context.Context, req *desc.DeleteRequest) (*emptypb.Empty, error) {
 	_ = req
 
+	slog.Info("Delete method", "req", fmt.Sprintf("%+v", req))
 	return nil, nil
 }
