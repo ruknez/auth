@@ -11,7 +11,7 @@ import (
 )
 
 // Delete удаление пользователя из системы по его идентификатору.
-func (s *UserV1GrpcService) Delete(_ context.Context, req *desc.DeleteRequest) (*emptypb.Empty, error) {
+func (s *GrpcServiceV1) Delete(_ context.Context, req *desc.DeleteRequest) (*emptypb.Empty, error) {
 	slog.Info("Delete method", "req", fmt.Sprintf("%+v", req))
 
 	return nil, nil
