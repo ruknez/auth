@@ -1,7 +1,7 @@
 package user
 
 import (
-	desc "auth/pkg/user_v1"
+	desc "github.com/ruknez/auth/pkg/user_v1"
 )
 
 // UserV1GrpcService реализация ручке grpc.

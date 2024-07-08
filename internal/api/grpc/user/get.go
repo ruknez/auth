@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log/slog"
 
-	desc "auth/pkg/user_v1"
+	desc "github.com/ruknez/auth/pkg/user_v1"
 )
 
 // Get ручка получения информации о пользователе по его идентификатору.

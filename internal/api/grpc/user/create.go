@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log/slog"
 
-	desc "auth/pkg/user_v1"
+	desc "github.com/ruknez/auth/pkg/user_v1"
 )
 
 // Create ручка создания нового пользователя в системе.

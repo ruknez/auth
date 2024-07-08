@@ -5,7 +5,7 @@ import (
 	"log/slog"
 	"net"
 
-	desc "auth/pkg/user_v1"
+	desc "github.com/ruknez/auth/pkg/user_v1"
 
 	"github.com/pkg/errors"
 	"google.golang.org/grpc"

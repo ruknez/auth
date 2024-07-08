@@ -3,19 +3,19 @@ package main
 import (
 	"fmt"
 
-	"auth/internal/api/grpc/user"
-	"auth/internal/app"
-	"auth/internal/app/grpc_transpotr"
+	"github.com/ruknez/auth/internal/api/grpc/user"
+	"github.com/ruknez/auth/internal/app"
+	"github.com/ruknez/auth/internal/app/grpc_transport"
 )
 
 func main() {
 	noteV1 := user.NewUserV1GrpcService()
-	transport, err := grpc_transpotr.NewTransportService()
+	transport, err := grpc_transport.NewTransportService()
 	if err != nil {
-		panic(fmt.Sprint("Error creating transport service: ", err))
+		panic(fmt.Errorf("creating transport service: %w", err))
 	}
 
 	if err = app.StartGrpcServer(transport, noteV1); err != nil {
-		panic(fmt.Sprint("Error starting grpc server: ", err))
+		panic(fmt.Errorf("starting grpc server: %w", err))
 	}
 }

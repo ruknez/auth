@@ -1,4 +1,4 @@
-module auth
+module github.com/ruknez/auth
 
 go 1.22
 
