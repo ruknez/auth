@@ -6,7 +6,7 @@ import "google/protobuf/timestamp.proto";
 import "google/protobuf/empty.proto";
 import "google/protobuf/wrappers.proto";
 
-option go_package = "github.com/ruknez/auth/user/pkg/user;user";
+option go_package = "github.com/ruknez/auth/pkg/user;user";
 
 service UserV1 {
   rpc Create(CreateRequest) returns (CreateResponse);
@@ -27,7 +27,7 @@ message CreateRequest {
     string password = 3;
     string password_confirm = 4;
     Role role = 5;
-    optional string login = 10;
+    optional string login = 6;
 }
 
 message CreateResponse {

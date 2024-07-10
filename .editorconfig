@@ -11,9 +11,6 @@ tab_width = 4
 
 charset = utf-8
 
-[pkg.json]
-indent_size = 2
-
 [*.go]
 indent_style = tab
 ij_continuation_indent_size = 4
@@ -42,15 +39,11 @@ ij_go_wrap_func_params_newline_before_rparen = true
 ij_go_wrap_func_result = off
 ij_go_wrap_func_result_newline_after_lparen = true
 ij_go_wrap_func_result_newline_before_rparen = true
-ij_go_local_package_prefixes = github.ruknez
+ij_go_local_package_prefixes = github.com/ruknez/auth
 
 [{GNUMakefile,makefile,Makefile,*.mk}]
 indent_style = tab
 
 [{*.yaml,.yfm,*.yml,*.sls}]
-indent_size = 2
-tab_width = 2
-
-[*.conf]
 indent_size = 2
 tab_width = 2
