@@ -19,7 +19,7 @@ generate-note-api:
 	--plugin=protoc-gen-go=bin/protoc-gen-go \
 	--go-grpc_out=pkg/user_v1 --go-grpc_opt=paths=source_relative \
 	--plugin=protoc-gen-go-grpc=bin/protoc-gen-go-grpc \
-	proto/user/user.proto
+	proto/user/user_v1.proto
 
 
 install-golangci-lint:
